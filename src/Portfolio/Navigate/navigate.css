@@ -1,0 +1,114 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 576px) {
+    .right-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        background: rgb(0, 75, 88);
+    }
+
+    #lower-time {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5pc;
+        height: 5pc;
+        padding: 3pc;
+        border-radius: 5pc;
+
+        animation-timing-function: linear;
+        animation-name: rotate;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background: #000000;
+        border: .1rem solid red;
+        box-shadow: 10px 5px 1rem rgb(42, 40, 40);
+    }
+    @keyframes rotate{
+        from{ transform: rotate(-360deg); }
+        to{ transform: rotate(360deg); }
+    }
+
+
+    #upper-time {
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 575px) {
+    .right-nav {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background: black;
+
+    }
+
+    #lower-time {
+
+        display: none;
+
+    }
+
+    #upper-time {
+        position: fixed;
+
+        margin: 0 auto;
+        display: flex;
+        animation-name: rotate;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        align-items: center;
+        justify-content: center;
+        width: 5pc;
+        border: 7px dotted red;
+        height: 5pc;
+        padding: 3pc;
+        border-radius: 5pc;
+        background: #ff830f;
+        font-weight: 700;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(-360deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font: cursive;
+    padding: .5rem;
+    font-variant: small-caps;
+    background: #000;
+    width: 100%;
+    border: .1rem solid red;
+    box-shadow: 10px 5px 1rem rgb(42, 40, 40);
+    margin: 0 auto;
+    color: RGB(243, 240, 52);
+}
